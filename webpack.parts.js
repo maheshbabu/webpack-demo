@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const PurifyCSSPlugin = require('purifycss-webpack');
 
 exports.devServer = function({ host, port }) {
 	return {
@@ -91,6 +92,39 @@ exports.autoprefix = function() {
 			plugins: () => ([
 					require('autoprefixer'),
 			]),
+		},
+	};
+};
+
+exports.purifyCSS = function({ paths }) {
+	return {
+		plugins: [
+			new PurifyCSSPlugin({ paths: paths }),
+		],
+	};
+};
+
+exports.lintCSS = function({ include, exclude }) {
+	return {
+		module: {
+			rules: [
+				{
+					test: /\.css$/,
+					iclude,
+					exclude,
+					enfore: 'pre',
+
+					loader: 'postcss-loader',
+					options: {
+						plugins: () => ([
+							require('stylelint')({
+								//ignore node_modules CSS
+								ignoreFiles: 'node_modules/**/*.css',
+							}),
+						]),
+					},
+				},
+			],
 		},
 	};
 };

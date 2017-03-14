@@ -6,7 +6,8 @@
   "scripts": {
     "lint:js": "eslint . --cache",
     "start": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --env development\"",
-    "build": "webpack --env production"
+    "build": "webpack --env production",
+    "lint:style": "stylelint app/**/*.css"
   },
   "keywords": [],
   "author": "",
@@ -18,11 +19,14 @@
     "eslint": "^3.17.0",
     "eslint-loader": "^1.6.3",
     "extract-text-webpack-plugin": "^2.1.0",
+    "glob": "^7.1.1",
     "html-webpack-plugin": "^2.28.0",
     "nodemon": "^1.11.0",
     "postcss-loader": "^1.3.3",
+    "purifycss-webpack": "^0.5.0",
     "resolve-url-loader": "^2.0.2",
     "style-loader": "^0.13.2",
+    "stylelint": "^7.9.0",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.1",
     "webpack-merge": "^3.0.0"
