@@ -110,9 +110,9 @@ exports.lintCSS = function({ include, exclude }) {
 			rules: [
 				{
 					test: /\.css$/,
-					iclude,
+					include,
 					exclude,
-					enfore: 'pre',
+					enforce: 'pre',
 
 					loader: 'postcss-loader',
 					options: {
