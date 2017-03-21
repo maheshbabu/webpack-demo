@@ -128,3 +128,70 @@ exports.lintCSS = function({ include, exclude }) {
 		},
 	};
 };
+
+exports.loadImages = function({ include, exclude, options } = {}) {
+	return {
+		module: {
+			rules: [
+				{
+					test: /\.(png|jpg)$/,
+					include,
+					exclude,
+
+					use: {
+						loader: 'url-loader',
+						options,
+					},
+				},
+			],
+		},
+	};
+};
+
+exports.loadJavaScript = function({ include, exclude }) {
+	return {
+		module: {
+			rules: [
+				{
+					test: /\.js$/,
+					include,
+					exclude,
+
+					loader: 'babel-loader',
+					options: {
+						// Enable caching for improved performance during // development
+						// It uses default OS directory by default. If you
+						// need something more custom, pass a path to it.
+						// i.e., { cacheDirectory: '<path>' }
+						cacheDirectory: true,
+					},
+				},
+			],
+		},
+	};
+};
+
+exports.generateSourceMaps = function({ type }) {
+	return {
+		devtool: type,
+	};
+};
+
+exports.extractBundles = function(bundles) {
+	const entry = {};
+	const plugins = [];
+
+	bundles.forEach((bundle) => {
+		const { name, entries } = bundle;
+
+		if (entries) {
+			entry[name] = entries;
+		}
+
+		plugins.push (
+			new webpack.optimize.CommonsChunkPlugin(bundle)
+		);
+	});
+
+	return { entry, plugins };
+};
