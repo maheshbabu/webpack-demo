@@ -3,6 +3,11 @@ export default function (text = 'Hello world') {
 
 	element.className = 'pure-button';
 	element.innerHTML = text;
-	
+	element.onclick = () => {
+		require.ensure([], (require) => {
+			element.textContent = require('./lazy').default;
+		});
+	};
+
 	return element;
 }

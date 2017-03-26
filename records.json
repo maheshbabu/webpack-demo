@@ -1,0 +1,407 @@
+{
+  "html-webpack-plugin for \"index.html\"": [
+    {
+      "modules": {
+        "byIdentifier": {
+          "node_modules/webpack/buildin/module.js": "3IRH",
+          "node_modules/webpack/buildin/global.js": "DuR2",
+          "node_modules/html-webpack-plugin/lib/loader.js!node_modules/html-webpack-plugin/default_index.ejs": "a/t9",
+          "node_modules/html-webpack-plugin/node_modules/lodash/lodash.js": "yN9q"
+        },
+        "usedIds": {
+          "3IRH": "3IRH",
+          "DuR2": "DuR2",
+          "a/t9": "a/t9",
+          "yN9q": "yN9q"
+        }
+      },
+      "chunks": {
+        "byName": {},
+        "byBlocks": {},
+        "usedIds": {
+          "0": 0
+        }
+      }
+    },
+    {
+      "modules": {
+        "byIdentifier": {
+          "node_modules/webpack/buildin/module.js": "3IRH",
+          "node_modules/webpack/buildin/global.js": "DuR2",
+          "node_modules/html-webpack-plugin/lib/loader.js!node_modules/html-webpack-plugin/default_index.ejs": "a/t9",
+          "node_modules/html-webpack-plugin/node_modules/lodash/lodash.js": "yN9q"
+        },
+        "usedIds": {
+          "3IRH": "3IRH",
+          "DuR2": "DuR2",
+          "a/t9": "a/t9",
+          "yN9q": "yN9q"
+        }
+      },
+      "chunks": {
+        "byName": {},
+        "byBlocks": {},
+        "usedIds": {
+          "0": 0
+        }
+      }
+    },
+    {
+      "modules": {
+        "byIdentifier": {
+          "node_modules/webpack/buildin/module.js": "3IRH",
+          "node_modules/webpack/buildin/global.js": "DuR2",
+          "node_modules/html-webpack-plugin/lib/loader.js!node_modules/html-webpack-plugin/default_index.ejs": "a/t9",
+          "node_modules/html-webpack-plugin/node_modules/lodash/lodash.js": "yN9q"
+        },
+        "usedIds": {
+          "3IRH": "3IRH",
+          "DuR2": "DuR2",
+          "a/t9": "a/t9",
+          "yN9q": "yN9q"
+        }
+      },
+      "chunks": {
+        "byName": {},
+        "byBlocks": {},
+        "usedIds": {
+          "0": 0
+        }
+      }
+    },
+    {
+      "modules": {
+        "byIdentifier": {
+          "node_modules/webpack/buildin/module.js": "3IRH",
+          "node_modules/webpack/buildin/global.js": "DuR2",
+          "node_modules/html-webpack-plugin/lib/loader.js!node_modules/html-webpack-plugin/default_index.ejs": "a/t9",
+          "node_modules/html-webpack-plugin/node_modules/lodash/lodash.js": "yN9q"
+        },
+        "usedIds": {
+          "3IRH": "3IRH",
+          "DuR2": "DuR2",
+          "a/t9": "a/t9",
+          "yN9q": "yN9q"
+        }
+      },
+      "chunks": {
+        "byName": {},
+        "byBlocks": {},
+        "usedIds": {
+          "0": 0
+        }
+      }
+    },
+    {
+      "modules": {
+        "byIdentifier": {
+          "node_modules/webpack/buildin/module.js": "3IRH",
+          "node_modules/webpack/buildin/global.js": "DuR2",
+          "node_modules/html-webpack-plugin/lib/loader.js!node_modules/html-webpack-plugin/default_index.ejs": "a/t9",
+          "node_modules/html-webpack-plugin/node_modules/lodash/lodash.js": "yN9q"
+        },
+        "usedIds": {
+          "3IRH": "3IRH",
+          "DuR2": "DuR2",
+          "a/t9": "a/t9",
+          "yN9q": "yN9q"
+        }
+      },
+      "chunks": {
+        "byName": {},
+        "byBlocks": {},
+        "usedIds": {
+          "0": 0
+        }
+      }
+    }
+  ],
+  "extract-text-webpack-plugin": [
+    {
+      "modules": {
+        "byIdentifier": {
+          "node_modules/css-loader/lib/css-base.js": "FZ+f",
+          "node_modules/css-loader/index.js!node_modules/postcss-loader/index.js?{}!node_modules/purecss/build/pure-min.css": "cRzB"
+        },
+        "usedIds": {
+          "FZ+f": "FZ+f",
+          "cRzB": "cRzB"
+        }
+      },
+      "chunks": {
+        "byName": {},
+        "byBlocks": {},
+        "usedIds": {
+          "0": 0
+        }
+      }
+    },
+    {
+      "modules": {
+        "byIdentifier": {
+          "node_modules/css-loader/lib/css-base.js": "FZ+f",
+          "node_modules/css-loader/index.js!node_modules/postcss-loader/index.js?{}!node_modules/postcss-loader/index.js?{}!app/main.css": "M6ez"
+        },
+        "usedIds": {
+          "FZ+f": "FZ+f",
+          "M6ez": "M6ez"
+        }
+      },
+      "chunks": {
+        "byName": {},
+        "byBlocks": {},
+        "usedIds": {
+          "0": 0
+        }
+      }
+    },
+    {
+      "modules": {
+        "byIdentifier": {
+          "node_modules/css-loader/lib/css-base.js": "FZ+f",
+          "node_modules/css-loader/index.js!node_modules/postcss-loader/index.js?{}!node_modules/purecss/build/pure-min.css": "cRzB"
+        },
+        "usedIds": {
+          "FZ+f": "FZ+f",
+          "cRzB": "cRzB"
+        }
+      },
+      "chunks": {
+        "byName": {},
+        "byBlocks": {},
+        "usedIds": {
+          "0": 0
+        }
+      }
+    },
+    {
+      "modules": {
+        "byIdentifier": {
+          "node_modules/css-loader/lib/css-base.js": "FZ+f",
+          "node_modules/css-loader/index.js!node_modules/postcss-loader/index.js?{}!node_modules/postcss-loader/index.js?{}!app/main.css": "M6ez"
+        },
+        "usedIds": {
+          "FZ+f": "FZ+f",
+          "M6ez": "M6ez"
+        }
+      },
+      "chunks": {
+        "byName": {},
+        "byBlocks": {},
+        "usedIds": {
+          "0": 0
+        }
+      }
+    },
+    {
+      "modules": {
+        "byIdentifier": {
+          "node_modules/css-loader/lib/css-base.js": "FZ+f",
+          "node_modules/css-loader/index.js!node_modules/postcss-loader/index.js?{}!node_modules/purecss/build/pure-min.css": "cRzB"
+        },
+        "usedIds": {
+          "FZ+f": "FZ+f",
+          "cRzB": "cRzB"
+        }
+      },
+      "chunks": {
+        "byName": {},
+        "byBlocks": {},
+        "usedIds": {
+          "0": 0
+        }
+      }
+    },
+    {
+      "modules": {
+        "byIdentifier": {
+          "node_modules/css-loader/lib/css-base.js": "FZ+f",
+          "node_modules/css-loader/index.js!node_modules/postcss-loader/index.js?{}!node_modules/postcss-loader/index.js?{}!app/main.css": "M6ez"
+        },
+        "usedIds": {
+          "FZ+f": "FZ+f",
+          "M6ez": "M6ez"
+        }
+      },
+      "chunks": {
+        "byName": {},
+        "byBlocks": {},
+        "usedIds": {
+          "0": 0
+        }
+      }
+    },
+    {
+      "modules": {
+        "byIdentifier": {
+          "node_modules/css-loader/lib/css-base.js": "FZ+f",
+          "node_modules/css-loader/index.js!node_modules/postcss-loader/index.js?{}!node_modules/purecss/build/pure-min.css": "cRzB"
+        },
+        "usedIds": {
+          "FZ+f": "FZ+f",
+          "cRzB": "cRzB"
+        }
+      },
+      "chunks": {
+        "byName": {},
+        "byBlocks": {},
+        "usedIds": {
+          "0": 0
+        }
+      }
+    },
+    {
+      "modules": {
+        "byIdentifier": {
+          "node_modules/css-loader/lib/css-base.js": "FZ+f",
+          "node_modules/css-loader/index.js!node_modules/postcss-loader/index.js?{}!node_modules/postcss-loader/index.js?{}!app/main.css": "M6ez"
+        },
+        "usedIds": {
+          "FZ+f": "FZ+f",
+          "M6ez": "M6ez"
+        }
+      },
+      "chunks": {
+        "byName": {},
+        "byBlocks": {},
+        "usedIds": {
+          "0": 0
+        }
+      }
+    },
+    {
+      "modules": {
+        "byIdentifier": {
+          "node_modules/css-loader/lib/css-base.js": "FZ+f",
+          "node_modules/css-loader/index.js!node_modules/postcss-loader/index.js?{}!node_modules/purecss/build/pure-min.css": "cRzB"
+        },
+        "usedIds": {
+          "FZ+f": "FZ+f",
+          "cRzB": "cRzB"
+        }
+      },
+      "chunks": {
+        "byName": {},
+        "byBlocks": {},
+        "usedIds": {
+          "0": 0
+        }
+      }
+    },
+    {
+      "modules": {
+        "byIdentifier": {
+          "node_modules/css-loader/lib/css-base.js": "FZ+f",
+          "node_modules/css-loader/index.js!node_modules/postcss-loader/index.js?{}!node_modules/postcss-loader/index.js?{}!app/main.css": "M6ez"
+        },
+        "usedIds": {
+          "FZ+f": "FZ+f",
+          "M6ez": "M6ez"
+        }
+      },
+      "chunks": {
+        "byName": {},
+        "byBlocks": {},
+        "usedIds": {
+          "0": 0
+        }
+      }
+    }
+  ],
+  "modules": {
+    "byIdentifier": {
+      "node_modules/extract-text-webpack-plugin/loader.js??ref--3-0!node_modules/style-loader/index.js!node_modules/css-loader/index.js!node_modules/postcss-loader/index.js??ref--3-3!node_modules/postcss-loader/index.js??ref--1!app/main.css": "1Q41",
+      "node_modules/babel-loader/lib/index.js??ref--2!node_modules/eslint-loader/index.js!app/index.js": "2twT",
+      "node_modules/react/lib/ReactPureComponent.js": "3imu",
+      "node_modules/react/lib/ReactClass.js": "4has",
+      "node_modules/react/lib/onlyChild.js": "5WN7",
+      "node_modules/react/lib/getIteratorFn.js": "8iJM",
+      "node_modules/react/lib/PooledClass.js": "9SWq",
+      "node_modules/object-assign/index.js": "BEQ0",
+      "node_modules/react/lib/ReactNoopUpdateQueue.js": "CO2B",
+      "node_modules/css-loader/lib/css-base.js": "FZ+f",
+      "node_modules/react/lib/ReactPropTypesSecret.js": "G1fh",
+      "node_modules/react/lib/React.js": "G1ow",
+      "node_modules/react/lib/ReactVersion.js": "GjCS",
+      "node_modules/react/lib/ReactElementSymbol.js": "KKHy",
+      "node_modules/react/lib/ReactChildren.js": "LTDs",
+      "node_modules/react/lib/ReactComponent.js": "Le75",
+      "node_modules/css-loader/index.js!node_modules/postcss-loader/index.js?{}!node_modules/postcss-loader/index.js?{}!app/main.css": "M6ez",
+      "node_modules/react/lib/traverseAllChildren.js": "MryT",
+      "node_modules/react/lib/canDefineProperty.js": "RFlT",
+      "node_modules/react/lib/ReactPropTypes.js": "S+kE",
+      "node_modules/fbjs/lib/emptyObject.js": "TJez",
+      "node_modules/react/react.js": "U7vG",
+      "node_modules/react/lib/ReactElement.js": "W2D2",
+      "node_modules/babel-loader/lib/index.js??ref--2!node_modules/eslint-loader/index.js!app/component.js": "YL6N",
+      "node_modules/fbjs/lib/warning.js": "YyeZ",
+      "node_modules/react/lib/reactProdInvariant.js": "ar93",
+      "node_modules/extract-text-webpack-plugin/loader.js??ref--3-0!node_modules/style-loader/index.js!node_modules/css-loader/index.js!node_modules/postcss-loader/index.js??ref--3-3!node_modules/purecss/build/pure-min.css": "c5m/",
+      "node_modules/css-loader/index.js!node_modules/postcss-loader/index.js?{}!node_modules/purecss/build/pure-min.css": "cRzB",
+      "node_modules/babel-loader/lib/index.js??ref--2!node_modules/eslint-loader/index.js!app/lazy.js": "co9Y",
+      "node_modules/fbjs/lib/invariant.js": "cxPT",
+      "node_modules/fbjs/lib/emptyFunction.js": "e6+Q",
+      "node_modules/style-loader/addStyles.js": "fjbf",
+      "node_modules/react/lib/ReactCurrentOwner.js": "kvXm",
+      "node_modules/react/lib/KeyEscapeUtils.js": "pV5o",
+      "node_modules/react/lib/ReactPropTypeLocationNames.js": "ueVO",
+      "node_modules/react/lib/ReactDOMFactories.js": "vUzd",
+      "node_modules/babel-loader/lib/index.js??ref--2!node_modules/eslint-loader/index.js!app/shake.js": "yUGL"
+    },
+    "usedIds": {
+      "1Q41": "1Q41",
+      "2twT": "2twT",
+      "3imu": "3imu",
+      "4has": "4has",
+      "5WN7": "5WN7",
+      "8iJM": "8iJM",
+      "9SWq": "9SWq",
+      "BEQ0": "BEQ0",
+      "CO2B": "CO2B",
+      "FZ+f": "FZ+f",
+      "G1fh": "G1fh",
+      "G1ow": "G1ow",
+      "GjCS": "GjCS",
+      "KKHy": "KKHy",
+      "LTDs": "LTDs",
+      "Le75": "Le75",
+      "M6ez": "M6ez",
+      "MryT": "MryT",
+      "RFlT": "RFlT",
+      "S+kE": "S+kE",
+      "TJez": "TJez",
+      "U7vG": "U7vG",
+      "W2D2": "W2D2",
+      "YL6N": "YL6N",
+      "YyeZ": "YyeZ",
+      "ar93": "ar93",
+      "c5m/": "c5m/",
+      "cRzB": "cRzB",
+      "co9Y": "co9Y",
+      "cxPT": "cxPT",
+      "e6+Q": "e6+Q",
+      "fjbf": "fjbf",
+      "kvXm": "kvXm",
+      "pV5o": "pV5o",
+      "ueVO": "ueVO",
+      "vUzd": "vUzd",
+      "yUGL": "yUGL"
+    }
+  },
+  "chunks": {
+    "byName": {
+      "vendor": 1,
+      "app": 2,
+      "manifest": 3
+    },
+    "byBlocks": {
+      "node_modules/babel-loader/lib/index.js??ref--2!node_modules/eslint-loader/index.js!app/component.js:0/0": 0
+    },
+    "usedIds": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3
+    }
+  }
+}

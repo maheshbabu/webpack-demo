@@ -1,6 +1,10 @@
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const PurifyCSSPlugin = require('purifycss-webpack');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const GitRevisionPlugin = require('git-revision-webpack-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const cssnano = require('cssnano');
 
 exports.devServer = function({ host, port }) {
 	return {
@@ -33,7 +37,7 @@ exports.lintJavascript = function({ include, exclude, options }) {
 
 					loader: 'eslint-loader',
 					options,
-				}
+				},
 			],
 		},
 	};
@@ -76,11 +80,11 @@ exports.extractCSS = function({ include, exclude, use }) {
 						fallback: 'style-loader',
 					}),
 				},
-			]
+			],
 		},
 		plugins: [
 			// output extracted CSS to a filename
-			new ExtractTextPlugin('[name].css'),
+			new ExtractTextPlugin('[contenthash:8].css'),
 		],
 	};
 };
@@ -90,7 +94,7 @@ exports.autoprefix = function() {
 		loader: 'postcss-loader',
 		options: {
 			plugins: () => ([
-					require('autoprefixer'),
+				require('autoprefixer'),
 			]),
 		},
 	};
@@ -194,4 +198,87 @@ exports.extractBundles = function(bundles) {
 	});
 
 	return { entry, plugins };
+};
+
+exports.clean = function(path) {
+	return {
+		plugins: [
+			new CleanWebpackPlugin([path]),
+		],
+	};
+};
+
+exports.attachRevision = function() {
+	return {
+		plugins: [
+			new webpack.BannerPlugin({
+				banner: new GitRevisionPlugin().version(),
+			}),
+		],
+	};
+};
+
+exports.minifyJavascript = function({ useSourceMap }) {
+	return {
+		plugins: [
+			new webpack.optimize.UglifyJsPlugin({
+				beautify: false, // Don't beautify output (uglier to read)
+
+				//Preserve comments,
+				comments: false,
+
+				//Extract comments to a seperate file. This works only
+				// if comments is set to true above
+				extractComments: false,
+
+				sourceMap: useSourceMap,
+				compress: {
+					warnings: false,
+					drop_console: true, // Drop 'console' statements
+				},
+
+				// Mangling specific options
+				mangle: {
+					except: ['$', 'webpack-Jsonp'], // Don't mangle $
+					screw_ie8 : true, // Don't care about IE8
+					keep_fname: true, // Don't mangle function names
+				},
+			}),
+		],
+	};
+};
+
+exports.minifyCSS = function({ options }) {
+	return {
+		plugins: [
+			new OptimizeCSSAssetsPlugin({
+				cssProcessor: cssnano,
+				cssProcessorOptions: options,
+			}),
+		],
+	};
+};
+
+exports.setFreeVariable = function(key, value) {
+	const env = {};
+	env[key] = JSON.stringify(value);
+
+	return {
+		plugins: [
+			new webpack.DefinePlugin(env),
+		],
+	};
+};
+
+exports.dontParse = function({ name, path }) {
+	const alias = {};
+	alias[name] = path;
+
+	return {
+		module: {
+			noParse: [
+				new RegExp(path),
+			],
+		},
+	};
 };

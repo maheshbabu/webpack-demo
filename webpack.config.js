@@ -18,13 +18,19 @@ const commonConfig = merge([
 		},
 		output: {
 			path: PATHS.build,
-			filename: '[name].js',
+			filename: '[chunkhash:8].js',
 		},
 		plugins: [
 			new HtmlWebpackPlugin({
 				title: 'Webpack demo',
 			}),
 		],
+		// dontParse({
+		// 	name: 'react',
+		// 	path: path.resolve(
+		// 		__dirname, 'node_modules/react/dist/react.min.js',
+		// 	),
+		// }),
 	},
 	parts.lintJavascript({ include: PATHS.app }),
 	parts.lintCSS({ include: PATHS.app }),
@@ -32,6 +38,24 @@ const commonConfig = merge([
 ]);
 
 const productionConfig = merge([
+	{
+		performance: {
+			hints: 'warning', //'error' or false are valid too
+			maxEntrypointSize: 100000, // in bytes
+			maxAssetSize: 200000, // in bytes
+		},
+	},
+	parts.clean(PATHS.build),
+	parts.minifyJavascript({ useSourceMap: true }),
+	parts.minifyCSS({
+		discardComments: {
+			removeAll: true,
+		},
+		// Run cssnano in safe mode to avoid
+		// potentiallu unsafe ones.
+		safe: true,
+	}),
+	parts.attachRevision(),
 	parts.extractBundles([
 		{
 			name: 'vendor',
@@ -40,6 +64,10 @@ const productionConfig = merge([
 				userRequest.indexOf('node_modules') >= 0 &&
 				userRequest.match(/\.js$/)
 			),
+		},
+		{
+			name: 'manifest',
+			minChunks: Infinity,
 		},
 	]),
 	parts.extractCSS({
@@ -55,6 +83,16 @@ const productionConfig = merge([
 		},
 	}),
 	parts.generateSourceMaps({ type: 'source-map' }),
+	parts.setFreeVariable(
+		'process.env.NODE_ENV',
+		'production',
+	),
+	{
+		plugins: [
+			new webpack.HashedModuleIdsPlugin(),
+		],
+		recordsPath: 'records.json',
+	},
 ]);
 
 const developmentConfig = merge([
@@ -64,7 +102,7 @@ const developmentConfig = merge([
 		},
 		plugins: [
 			new webpack.NamedModulesPlugin(),
-		]
+		],
 	},
 	parts.generateSourceMaps({ type: 'cheap-module-eval-source-amp' }),
 	parts.devServer({
@@ -74,6 +112,17 @@ const developmentConfig = merge([
 	}),
 	parts.loadCSS(),
 	parts.loadImages(),
+]);
+
+const libraryConfig = merge([
+	commonConfig,
+	{
+		output: {
+			filename: '[name].js',
+		},
+	},
+	parts.clean(PATHS.build),
+	parts.lintJavascript({ include: PATHS.lib }),
 ]);
 
 module.exports = function(env) {
