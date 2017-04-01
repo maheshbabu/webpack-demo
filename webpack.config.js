@@ -83,10 +83,6 @@ const productionConfig = merge([
 		},
 	}),
 	parts.generateSourceMaps({ type: 'source-map' }),
-	parts.setFreeVariable(
-		'process.env.NODE_ENV',
-		'production',
-	),
 	{
 		plugins: [
 			new webpack.HashedModuleIdsPlugin(),

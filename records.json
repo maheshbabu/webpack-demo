@@ -114,9 +114,70 @@
           "0": 0
         }
       }
+    },
+    {
+      "modules": {
+        "byIdentifier": {
+          "node_modules/webpack/buildin/module.js": "3IRH",
+          "node_modules/webpack/buildin/global.js": "DuR2",
+          "node_modules/html-webpack-plugin/lib/loader.js!node_modules/html-webpack-plugin/default_index.ejs": "a/t9",
+          "node_modules/html-webpack-plugin/node_modules/lodash/lodash.js": "yN9q"
+        },
+        "usedIds": {
+          "3IRH": "3IRH",
+          "DuR2": "DuR2",
+          "a/t9": "a/t9",
+          "yN9q": "yN9q"
+        }
+      },
+      "chunks": {
+        "byName": {},
+        "byBlocks": {},
+        "usedIds": {
+          "0": 0
+        }
+      }
     }
   ],
   "extract-text-webpack-plugin": [
+    {
+      "modules": {
+        "byIdentifier": {
+          "node_modules/css-loader/lib/css-base.js": "FZ+f",
+          "node_modules/css-loader/index.js!node_modules/postcss-loader/index.js?{}!node_modules/purecss/build/pure-min.css": "cRzB"
+        },
+        "usedIds": {
+          "FZ+f": "FZ+f",
+          "cRzB": "cRzB"
+        }
+      },
+      "chunks": {
+        "byName": {},
+        "byBlocks": {},
+        "usedIds": {
+          "0": 0
+        }
+      }
+    },
+    {
+      "modules": {
+        "byIdentifier": {
+          "node_modules/css-loader/lib/css-base.js": "FZ+f",
+          "node_modules/css-loader/index.js!node_modules/postcss-loader/index.js?{}!node_modules/postcss-loader/index.js?{}!app/main.css": "M6ez"
+        },
+        "usedIds": {
+          "FZ+f": "FZ+f",
+          "M6ez": "M6ez"
+        }
+      },
+      "chunks": {
+        "byName": {},
+        "byBlocks": {},
+        "usedIds": {
+          "0": 0
+        }
+      }
+    },
     {
       "modules": {
         "byIdentifier": {
@@ -346,7 +407,11 @@
       "node_modules/react/lib/KeyEscapeUtils.js": "pV5o",
       "node_modules/react/lib/ReactPropTypeLocationNames.js": "ueVO",
       "node_modules/react/lib/ReactDOMFactories.js": "vUzd",
-      "node_modules/babel-loader/lib/index.js??ref--2!node_modules/eslint-loader/index.js!app/shake.js": "yUGL"
+      "node_modules/babel-loader/lib/index.js??ref--2!node_modules/eslint-loader/index.js!app/shake.js": "yUGL",
+      "node_modules/react/lib/ReactComponentTreeHook.js": "5LTE",
+      "node_modules/react/lib/ReactElementValidator.js": "9lIC",
+      "node_modules/process/browser.js": "W2nU",
+      "node_modules/react/lib/checkReactTypeSpec.js": "sXAx"
     },
     "usedIds": {
       "1Q41": "1Q41",
@@ -385,7 +450,11 @@
       "pV5o": "pV5o",
       "ueVO": "ueVO",
       "vUzd": "vUzd",
-      "yUGL": "yUGL"
+      "yUGL": "yUGL",
+      "5LTE": "5LTE",
+      "9lIC": "9lIC",
+      "W2nU": "W2nU",
+      "sXAx": "sXAx"
     }
   },
   "chunks": {
